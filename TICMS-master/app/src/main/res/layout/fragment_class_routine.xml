@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context="com.texasimaginology.ticms.ClassRoutine.ClassRoutineFragment">
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/select_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:ms_hint="Select Faculty"
+        app:ms_enableFloatingLabel="true"
+        app:ms_floatingLabelText="Faculty"/>
+
+    <!--<fr.ganfra.materialspinner.MaterialSpinner-->
+        <!--android:id="@+id/select_semester"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_below="@id/select_course"-->
+        <!--app:ms_hint="Select Semester"-->
+        <!--app:ms_enableFloatingLabel="true"-->
+        <!--app:ms_floatingLabelText="Semester"/>-->
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/select_semester">
+
+    </android.support.v7.widget.RecyclerView>-->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select_semester">
+
+            <de.codecrafters.tableview.TableView xmlns:table="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tableView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                table:tableView_columnCount="8" />
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.texasimaginology.ticms.Courses.CourseListFragment">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/course_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_courses"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    </android.widget.RelativeLayout>
+
+    <android.widget.RelativeLayout
+        android:id="@+id/subject_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_container_subjects"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/semester_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelText="Semester"
+                app:ms_hint="Select Semester" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/label_courses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/spinner_container_subjects"
+            android:text="Subjects"
+            android:textSize="15sp"
+            android:layout_marginStart="40dp" />
+        <TextView
+            android:id="@+id/label_subject_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/spinner_container_subjects"
+            android:text="Subject code"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/subject_recyclerview"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/label_courses">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.widget.RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/courseslist_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+</FrameLayout>

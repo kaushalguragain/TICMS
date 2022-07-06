@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    tools:context=".NavigationViewItems.Contact.ContactFragment">
+
+
+    <TextView
+        android:id="@+id/label_contactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textColor="@color/colorBlack"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="By Email"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/label_contactus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="info@texasintl.edu.np"
+        android:layout_below="@id/label_contactus"
+        android:layout_toRightOf="@id/label_email"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:id="@+id/label_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="By Phone"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/label_email"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="01-4479017,4490670"
+        android:layout_below="@id/label_email"
+        android:layout_toRightOf="@id/label_phone"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:id="@+id/label_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Address"
+        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/label_phone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Mitrapark, Chabahil, Kathmandu"
+        android:layout_below="@id/label_phone"
+        android:layout_toRightOf="@id/label_address"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"/>
+
+
+
+    Texas International college
+
+    BY E-MAIL; info@texasintl.edu.np BY PHONE; ;
+</RelativeLayout>

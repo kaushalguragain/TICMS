@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notification.sendNotification.SendNotificationActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/select_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:ms_hint="Select Team"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelText="Team"/>
+<!--
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/select_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:ms_hint="Select Semester"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelText="Semester"/>
+-->
+
+
+        <EditText
+            android:id="@+id/title_of_notification"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notification Title"
+            android:background="@drawable/spinner_background"
+            android:padding="@dimen/fab_margin"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/your_message"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:hint="Type your message"
+                android:background="@drawable/spinner_background"
+                android:padding="@dimen/fab_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:layout_margin="8dp"
+                app:srcCompat="@android:drawable/ic_menu_send">
+
+            </android.support.design.widget.FloatingActionButton>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progress_bar"/>
+    </LinearLayout>
+
+
+<!--<Button-->
+    <!--android:layout_marginTop="@dimen/fab_margin"-->
+    <!--android:id="@+id/send_notification"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorPrimaryDark"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:textSize="18sp"-->
+    <!--android:padding="@dimen/fab_margin"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:text="Send Notification"/>-->
+</LinearLayout>

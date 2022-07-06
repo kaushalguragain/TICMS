@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home_grey_24dp"/>
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/ic_dashboard_grey_24dp"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_my_routine"
+            android:title="My Routine"
+            android:icon="@drawable/ic_clas_routine_grey_24dp"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_news"
+            android:title="News"
+            android:icon="@drawable/ic_news_grey_24dp"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_classRoutine"
+            android:title="Class Routine"
+            android:icon="@drawable/ic_clas_routine_grey_24dp"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact"
+            android:icon="@drawable/ic_contact_phone_grey_24dp"/>
+        <item
+            android:id="@+id/nav_counseling"
+            android:title="Counseling"
+            android:icon="@drawable/ic_people_outline_grey_24dp"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_about"
+            android:title="About"
+            android:visible="false"
+            android:icon="@drawable/ic_about_24dp"/>
+        <item
+            android:id="@+id/nav_send_notification"
+            android:title="Send Notification"
+            android:icon="@drawable/ic_notifications_grey_24dp"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_login"
+            android:title="Login"
+            android:icon="@drawable/ic_vpn_key_grey_24dp"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_exit_to_app_grey_24dp"
+            android:visible="false"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "345204445847",
+    "firebase_url": "https://ticms-ad8c8.firebaseio.com",
+    "project_id": "ticms-ad8c8",
+    "storage_bucket": "ticms-ad8c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345204445847:android:52403ec7b74a85a2",
+        "android_client_info": {
+          "package_name": "com.texasimaginology.ticms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345204445847-3uq5vt4tg5o0f8hnfhcjpu6ocq8m8vef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU7Oxui-5qJdlHL6f8pMl7BXp1922gYRY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

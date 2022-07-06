@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Counseling.Counseling_Fragment">
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/Counseling_RelativeLayout"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/btnupload"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignBottom="@+id/Counseling_ImageView"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="12dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="12dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="UPLOAD"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#ed046d"&ndash;&gt;-->
+    <!--&lt;!&ndash;&gt;</Button>&ndash;&gt;-->
+
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/Counseling_ImageView">-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="533dp"-->
+    <!--android:padding="50dp">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/Counseling_titleView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:text="Counseling Form"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="25dp"-->
+    <!--android:textStyle="bold" />-->
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--android:id="@+id/Counseling_ImageView"-->
+    <!--android:layout_width="166dp"-->
+    <!--android:layout_height="171dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_below="@+id/Counseling_titleView"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="56dp"-->
+    <!--android:src="@drawable/counseling" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_fullname"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/Counseling_ImageView"-->
+    <!--android:text="Fullname"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_fullname"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_fullname"-->
+    <!--android:hint="madan singh thakuri"-->
+    <!--android:textSize="15sp" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_studentid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_fullname"-->
+    <!--android:text="Student ID"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_studentid"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_studentid"-->
+    <!--android:hint="student id"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="11sp" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_schoolname"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_studentid"-->
+    <!--android:text="Schoolname"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_schoolname"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_schoolname"-->
+    <!--android:hint="SchoolName"-->
+    <!--android:textSize="15sp"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/View_phone"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_schoolname"-->
+    <!--android:text="Phone"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_phone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/View_phone"-->
+    <!--android:hint="phone"-->
+    <!--android:inputType="number"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_email"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_phone"-->
+    <!--android:text="Email"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_email"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_email"-->
+    <!--android:hint="user@gmail.com"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/view_stream"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_below="@+id/edit_email"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Stream"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#000"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="15sp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/edit_stream"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_below="@+id/view_stream"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:hint="stream"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="15sp" />&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_courseid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_email"-->
+    <!--android:text="Coures"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+
+    <!--<Spinner-->
+    <!--android:id="@+id/counseling_selectSpinner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_courseid"-->
+    <!--android:layout_centerHorizontal="true" />-->
+
+    <!--&lt;!&ndash;app:ms_enableFloatingLabel="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:ms_floatingLabelText="Course"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/edit_courseid"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_below="@+id/view_courseid"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;android:textSize="15sp" />&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_totalfee"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/counseling_selectSpinner"-->
+
+    <!--android:text="Total Fee"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_totalfee"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_totalfee"-->
+    <!--android:inputType="numberDecimal"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_negotiatefee"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_totalfee"-->
+    <!--android:text="NegotiateFee"-->
+
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_negotiatefee"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_negotiatefee"-->
+    <!--android:inputType="numberDecimal"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_counseledby"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_negotiatefee"-->
+    <!--android:text="Counseledby"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_counseledby"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_counseledby"-->
+    <!--android:hint=""-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_recommendedBy"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_counseledby"-->
+    <!--android:text="recommendedBy"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_recommendedBy"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/view_recommendedBy"-->
+    <!--android:hint=""-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnsummit"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_recommendedBy"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Summit" />-->
+
+
+    <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/counseling_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/counseling_list_progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:visibility="gone" />
+
+</FrameLayout>

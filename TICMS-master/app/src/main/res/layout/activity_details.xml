@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_activity_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/user_details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/details_background" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/appbar_activity_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/user_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar_activity_details"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:text="UserRole"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/basic_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_image_view"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/user_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Deependra Dhakal"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_full_name"
+            android:layout_centerHorizontal="true"
+            android:text="username"
+            android:textColor="#E8C5C5"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/basic_info_layout"
+        android:padding="26dp">
+
+        <TextView
+            android:id="@+id/label_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_black_13dp"
+            android:drawablePadding="3dp"
+            android:text="Email"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_email"
+            android:text="usersemail@gmail.com"
+            android:textColor="#575757"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/sep1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/user_email"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/label_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sep1"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/ic_local_phone_black_13dp"
+            android:drawablePadding="3dp"
+            android:text="Phone"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_phone"
+            android:text="+977-9843119111"
+            android:textColor="#575757"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/sep2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/user_phone"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/label_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sep2"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/ic_person_black_13dp"
+            android:drawablePadding="3dp"
+            android:text="Username"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_username"
+            android:text="deepbhai"
+            android:textColor="#575757"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/sep3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/username"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+</RelativeLayout>

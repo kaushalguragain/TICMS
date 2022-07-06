@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <include layout="@layout/app_bar" android:id="@+id/student_details_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/student_details_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/student_details_toolbar"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/curve_details_background"
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/details_background" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/student_image_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/student_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Full Name"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/curve_details_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="26dp">
+
+                <TextView
+                    android:id="@+id/label_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email_black_13dp"
+                    android:drawablePadding="3dp"
+                    android:text="Email"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/student_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_email"
+                    android:text="usersemail@gmail.com"
+                    android:textColor="#575757"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/sep1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/student_email"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/label_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep1"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/ic_local_phone_black_13dp"
+                    android:drawablePadding="3dp"
+                    android:text="Phone"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/student_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_phone"
+                    android:text="+977-9843119111"
+                    android:textColor="#575757"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/sep2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/student_phone"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/label_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep2"
+                    android:layout_marginTop="3dp"
+                    android:text="Gender"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_gender"
+                    android:text="Male"
+                    android:textColor="#575757"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/sep3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/gender"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/label_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Address"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/label_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/label_gender"
+                    android:layout_alignRight="@+id/label_gender"
+                    android:layout_below="@+id/label_address"
+                    android:text="Zone"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_zone"
+                    android:text="Bagmati"
+                    android:textColor="#575757"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/label_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/zone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:text="District"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/label_district"
+                    android:text="Kavrepalanchok"
+                    android:textColor="#575757"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/sep4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/district"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/label_vdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/label_gender"
+                    android:layout_alignRight="@+id/label_gender"
+                    android:layout_below="@+id/sep4"
+                    android:layout_marginTop="3dp"
+                    android:text="VDC"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/vdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_vdc"
+                    android:text="Sipaghat"
+                    android:textColor="#575757"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/label_ward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/sep4"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Ward"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/ward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/label_ward"
+                    android:layout_alignStart="@+id/label_ward"
+                    android:layout_below="@+id/label_ward"
+                    android:text="02"
+                    android:textColor="#575757"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/sep5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ward"
+                    android:background="@android:color/darker_gray" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
